@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador Texto</title>
+</head>
+<body>
+    <main class="container">
+        <div class="encriptar">
+            <textarea
+                name="texto"
+                class="texto"
+                id="texto"
+                cols="30"
+                rows="10"
+                placeholder="Ingresa el texto aquí"
+            ></textarea>
+            <div class="terminos">
+                <p>Solo letras minúsculas y sin acentos.</p>
+            </div>
+            <div class="botones">
+                <button class="btn-cifrar" type="button" onclick="encriptar()">Encriptar</button>
+                <button class="btn-descifrar" type="button" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+        <div class="encriptado">
+            <img src="img/muñeco.png" alt="" id="muñeco" class="muñeco" />
+            <div class="mensaje-encriptado" id="mensaje-encriptado">
+                <h2 class="titulo-mensaje" id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+                <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+            <button id="btn-copiar" class="btn-copiar" style="display: none;">Copiar</button>
+        </div>       
+    </main>
+    <footer class="pie_pagina">
+        <p>Desarrollado por Felix Asmad - 2024</p>
+    </footer>
+</body>
+<script src="app.js"></script>
+</html>
+
+
